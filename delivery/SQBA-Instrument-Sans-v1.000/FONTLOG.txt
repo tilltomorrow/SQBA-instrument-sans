@@ -1,0 +1,64 @@
+FONTLOG for SQBA Instrument Sans
+================================
+
+This file provides detailed information on the SQBA Instrument Sans font
+software. This information should be distributed along with the fonts
+and any derivative works.
+
+
+Basic Font Information
+----------------------
+
+SQBA Instrument Sans is a modified version of Instrument Sans, made by
+Van Lennep Amsterdam for SQBA. It is a family of four static styles:
+Regular, Italic, Bold and Bold Italic.
+
+All four styles are instances of the Instrument Sans design space at a
+fixed width of 94 (wdth axis) and weights of 500 (Regular, Italic) and
+700 (Bold, Bold Italic). They are style-linked as one family.
+
+A selection of the original stylistic sets has been made the default,
+so the alternate forms appear without any OpenType settings.
+
+The fonts are released under the SIL Open Font License, Version 1.1
+(see OFL.txt). In accordance with the license, the derivative carries
+its own family name.
+
+
+ChangeLog
+---------
+
+21 October 2026 (Van Lennep Amsterdam) SQBA Instrument Sans Version 1.000
+- Forked from Instrument Sans (github.com/Instrument/instrument-sans),
+  sources InstrumentSans.glyphs and InstrumentSans-Italic.glyphs.
+- Renamed the family to SQBA Instrument Sans.
+- Defined four static instances: width 94, weights 500 and 700, roman
+  and italic. Regular and Italic use weight class 400 for correct
+  style linking.
+- Made the following stylistic sets the default forms:
+    ss01  Round punctuation, tittles and diacritics
+    ss03  "y" with a rounded descender
+    ss06  "M" with angled strokes
+    ss07  "G" without the spur
+    ss08  "J" with extended terminal
+    ss09  "Q" with alternate tail
+    ss10  "2" with alternate spine
+    ss12  "$" and "¢" with solid vertical stroke
+  The original default forms are no longer exported. Stylistic sets
+  ss02, ss04, ss05 and ss11 remain available as OpenType features.
+- Composite glyphs (accented letters, case forms, IJ) updated to use
+  the new default forms.
+- Manufacturer set to Van Lennep Amsterdam. Designer credit and the
+  original copyright notice are retained.
+- Fonts built with fontmake (overlaps removed with skia-pathops).
+- WOFF2 webfonts generated from the OTF files with fontTools.
+
+
+Acknowledgements
+----------------
+
+Original design: Rodrigo Fuenzalida, with direction from Jordan Egstad,
+for Instrument. Copyright 2022 The Instrument Sans Project Authors
+(https://github.com/Instrument/instrument-sans).
+
+Modifications: Van Lennep Amsterdam (www.vanlennep.eu), 2026.
