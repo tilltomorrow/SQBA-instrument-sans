@@ -77,15 +77,10 @@ feature ordn;
 feature pnum;
 feature tnum;
 feature case;
-feature ss01;
 feature ss02;
-feature ss03;
 feature ss04;
 feature ss05;
-feature ss07;
-feature ss08;
 feature ss11;
-feature ss12;
 ";
 tag = aalt;
 },
@@ -215,50 +210,6 @@ tag = liga;
 },
 {
 automatic = 1;
-code = "sub Cdotaccent by Cdotaccent.ss01;
-sub Edotaccent by Edotaccent.ss01;
-sub Gdotaccent by Gdotaccent.ss01;
-sub Idotaccent by Idotaccent.ss01;
-sub Lcommaaccent by Lcommaaccent.ss01;
-sub Odieresis by Odieresis.ss01;
-sub Scommaaccent by Scommaaccent.ss01;
-sub Udieresis by Udieresis.ss01;
-sub Zdotaccent by Zdotaccent.ss01;
-sub cdotaccent by cdotaccent.ss01;
-sub edotaccent by edotaccent.ss01;
-sub gdotaccent by gdotaccent.ss01;
-sub idieresis by idieresis.ss01;
-sub iogonek by iogonek.ss01;
-sub j by j.ss01;
-sub lcommaaccent by lcommaaccent.ss01;
-sub odieresis by odieresis.ss01;
-sub scommaaccent by scommaaccent.ss01;
-sub udieresis by udieresis.ss01;
-sub ydieresis by ydieresis.ss01;
-sub f_i by f_i.ss01;
-sub comma by comma.ss01;
-sub semicolon by semicolon.ss01;
-sub exclam by exclam.ss01;
-sub question by question.ss01;
-sub periodcentered by periodcentered.ss01;
-sub periodcentered.loclCAT.case by periodcentered.loclCAT.case.ss01;
-sub quotedblbase by quotedblbase.ss01;
-sub quotedblright by quotedblright.ss01;
-sub quoteright by quoteright.ss01;
-sub dotaccentcomb by dotaccentcomb.ss01;
-sub commaaccentcomb by commaaccentcomb.ss01;
-sub dotaccent by dotaccent.ss01;
-";
-labels = (
-{
-language = dflt;
-value = "Round dots";
-}
-);
-tag = ss01;
-},
-{
-automatic = 1;
 code = "sub a by a.ss02;
 sub aacute by aacute.ss02;
 sub abreve by abreve.ss02;
@@ -278,20 +229,6 @@ value = "Single Story a";
 }
 );
 tag = ss02;
-},
-{
-automatic = 1;
-code = "sub yacute by yacute.ss03;
-sub ydieresis by ydieresis.ss03;
-sub ydieresis.ss01 by ydieresis.ss01.ss03;
-";
-labels = (
-{
-language = dflt;
-value = "Alternate y";
-}
-);
-tag = ss03;
 },
 {
 automatic = 1;
@@ -325,31 +262,6 @@ tag = ss05;
 },
 {
 automatic = 1;
-code = "sub G by G.ss07;
-sub Gcommaaccent by Gcommaaccent.ss07;
-";
-labels = (
-{
-language = dflt;
-value = "Alternate G";
-}
-);
-tag = ss07;
-},
-{
-automatic = 1;
-code = "sub J by J.ss08;
-";
-labels = (
-{
-language = dflt;
-value = "Alternate J";
-}
-);
-tag = ss08;
-},
-{
-automatic = 1;
 code = "sub ampersand by ampersand.ss11;
 ";
 labels = (
@@ -359,18 +271,6 @@ value = "Alternate Ampersand";
 }
 );
 tag = ss11;
-},
-{
-automatic = 1;
-code = "sub dollar by dollar.ss12;
-";
-labels = (
-{
-language = dflt;
-value = "Alternate Currency";
-}
-);
-tag = ss12;
 }
 );
 fontMaster = (
@@ -6710,7 +6610,7 @@ ref = I;
 },
 {
 pos = (210,0);
-ref = J.ss08;
+ref = J;
 }
 );
 width = 517;
@@ -6723,7 +6623,7 @@ ref = I;
 },
 {
 pos = (254,0);
-ref = J.ss08;
+ref = J;
 }
 );
 width = 709;
@@ -6736,7 +6636,7 @@ ref = I;
 },
 {
 pos = (242,0);
-ref = J.ss08;
+ref = J;
 }
 );
 width = 544;
@@ -6749,7 +6649,7 @@ ref = I;
 },
 {
 pos = (254,0);
-ref = J.ss08;
+ref = J;
 }
 );
 width = 667;
@@ -14609,7 +14509,7 @@ ref = W;
 },
 {
 pos = (114,210);
-ref = dieresiscomb.ss01;
+ref = dieresiscomb;
 }
 );
 width = 622;
@@ -14622,7 +14522,7 @@ ref = W;
 },
 {
 pos = (324,210);
-ref = dieresiscomb.ss01;
+ref = dieresiscomb;
 }
 );
 width = 1089;
@@ -14635,7 +14535,7 @@ ref = W;
 },
 {
 pos = (105,210);
-ref = dieresiscomb.ss01;
+ref = dieresiscomb;
 }
 );
 width = 679;
@@ -14648,7 +14548,7 @@ ref = W;
 },
 {
 pos = (288,210);
-ref = dieresiscomb.ss01;
+ref = dieresiscomb;
 }
 );
 width = 1086;
@@ -15876,6 +15776,7 @@ width = 635;
 unicode = 379;
 },
 {
+export = 0;
 glyphname = Cdotaccent.ss01;
 kernLeft = KO_O;
 kernRight = KO_C;
@@ -15889,7 +15790,7 @@ ref = C;
 },
 {
 pos = (131,210);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 461;
@@ -15936,6 +15837,7 @@ width = 750;
 );
 },
 {
+export = 0;
 glyphname = Edotaccent.ss01;
 kernLeft = KO_B;
 kernRight = KO_E;
@@ -15949,7 +15851,7 @@ ref = E;
 },
 {
 pos = (108,210);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 415;
@@ -15997,6 +15899,7 @@ width = 626;
 },
 {
 color = 6;
+export = 0;
 glyphname = Gdotaccent.ss01;
 kernLeft = KO_O;
 kernRight = KO_G.ss07;
@@ -16010,7 +15913,7 @@ ref = G;
 },
 {
 pos = (141,210);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 473;
@@ -16057,6 +15960,7 @@ width = 776;
 );
 },
 {
+export = 0;
 glyphname = Idotaccent.ss01;
 kernLeft = KO_B;
 kernRight = KO_Iacute;
@@ -16070,7 +15974,7 @@ ref = I;
 },
 {
 pos = (-5,210);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 210;
@@ -16117,6 +16021,7 @@ width = 254;
 );
 },
 {
+export = 0;
 glyphname = Lcommaaccent.ss01;
 kernLeft = KO_B;
 kernRight = KO_L;
@@ -16130,7 +16035,7 @@ ref = L;
 },
 {
 pos = (95,0);
-ref = commaaccentcomb;
+ref = commaaccentcomb.ss01;
 }
 );
 width = 375;
@@ -16177,6 +16082,7 @@ width = 590;
 );
 },
 {
+export = 0;
 glyphname = Odieresis.ss01;
 kernLeft = KO_O;
 kernRight = KO_O;
@@ -16190,7 +16096,7 @@ ref = O;
 },
 {
 pos = (45,210);
-ref = dieresiscomb;
+ref = dieresiscomb.ss01;
 }
 );
 width = 500;
@@ -16237,6 +16143,7 @@ width = 798;
 );
 },
 {
+export = 0;
 glyphname = Scommaaccent.ss01;
 kernLeft = KO_S;
 kernRight = KO_S;
@@ -16250,7 +16157,7 @@ ref = S;
 },
 {
 pos = (103,0);
-ref = commaaccentcomb;
+ref = commaaccentcomb.ss01;
 }
 );
 width = 414;
@@ -16297,6 +16204,7 @@ width = 652;
 );
 },
 {
+export = 0;
 glyphname = Udieresis.ss01;
 kernLeft = KO_U;
 kernRight = KO_U;
@@ -16310,7 +16218,7 @@ ref = U;
 },
 {
 pos = (33,210);
-ref = dieresiscomb;
+ref = dieresiscomb.ss01;
 }
 );
 width = 476;
@@ -16357,6 +16265,7 @@ width = 700;
 );
 },
 {
+export = 0;
 glyphname = Zdotaccent.ss01;
 kernLeft = KO_Z;
 kernRight = KO_Z;
@@ -16370,7 +16279,7 @@ ref = Z;
 },
 {
 pos = (116,210);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 452;
@@ -17343,6 +17252,7 @@ width = 662;
 );
 },
 {
+export = 0;
 glyphname = G.ss07;
 kernLeft = KO_O;
 kernRight = KO_G;
@@ -17714,6 +17624,7 @@ width = 763;
 },
 {
 color = 0;
+export = 0;
 glyphname = Gcommaaccent.ss07;
 kernLeft = KO_O;
 kernRight = KO_G;
@@ -17778,6 +17689,7 @@ width = 763;
 );
 },
 {
+export = 0;
 glyphname = J.ss08;
 kernLeft = KO_J;
 kernRight = KO_J;
@@ -17948,6 +17860,7 @@ KernOnName = J;
 },
 {
 color = 7;
+export = 0;
 glyphname = Kcommaaccent.ss01.ss04;
 kernLeft = KO_B;
 kernRight = KO_K.ss08;
@@ -17961,7 +17874,7 @@ ref = K.ss04;
 },
 {
 pos = (140,0);
-ref = commaaccentcomb;
+ref = commaaccentcomb.ss01;
 }
 );
 width = 466;
@@ -18008,6 +17921,7 @@ width = 722;
 );
 },
 {
+export = 0;
 glyphname = Gcommaaccent.ss01.ss07;
 kernLeft = KO_O;
 kernRight = KO_G;
@@ -18017,11 +17931,11 @@ layers = (
 layerId = m01;
 shapes = (
 {
-ref = G;
+ref = G.ss07;
 },
 {
 pos = (138,0);
-ref = commaaccentcomb;
+ref = commaaccentcomb.ss01;
 }
 );
 width = 473;
@@ -37527,6 +37441,7 @@ width = 522;
 unicode = 380;
 },
 {
+export = 0;
 glyphname = cdotaccent.ss01;
 kernLeft = KO_e;
 kernRight = KO_c;
@@ -37540,7 +37455,7 @@ ref = c;
 },
 {
 pos = (95,0);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 384;
@@ -37587,6 +37502,7 @@ width = 562;
 );
 },
 {
+export = 0;
 glyphname = edotaccent.ss01;
 kernLeft = KO_e;
 kernRight = KO_egrave;
@@ -37600,7 +37516,7 @@ ref = e;
 },
 {
 pos = (103,0);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 402;
@@ -37647,6 +37563,7 @@ width = 574;
 );
 },
 {
+export = 0;
 glyphname = gdotaccent.ss01;
 kernLeft = KO_g;
 kernRight = KO_u;
@@ -37660,7 +37577,7 @@ ref = g;
 },
 {
 pos = (104,0);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 448;
@@ -37707,6 +37624,7 @@ width = 628;
 );
 },
 {
+export = 0;
 glyphname = idieresis.ss01;
 kernLeft = KO_idieresis;
 lastChange = "2026-10-21 11:51:30 +0000";
@@ -37719,7 +37637,7 @@ ref = idotless;
 },
 {
 pos = (-107,0);
-ref = dieresiscomb;
+ref = dieresiscomb.ss01;
 }
 );
 width = 196;
@@ -37769,6 +37687,7 @@ KernOnName = idieresis;
 };
 },
 {
+export = 0;
 glyphname = iogonek.ss01;
 kernLeft = KO_j;
 kernRight = KO_idotaccent;
@@ -37782,7 +37701,7 @@ ref = idotless;
 },
 {
 pos = (-12,0);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 },
 {
 pos = (-72,0);
@@ -37845,6 +37764,7 @@ width = 270;
 );
 },
 {
+export = 0;
 glyphname = j.ss01;
 kernLeft = KO_j;
 kernRight = KO_j;
@@ -37858,7 +37778,7 @@ ref = jdotless;
 },
 {
 pos = (-12,0);
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 196;
@@ -37992,6 +37912,7 @@ KernOnName = j;
 };
 },
 {
+export = 0;
 glyphname = lcommaaccent.ss01;
 kernLeft = KO_j;
 kernRight = KO_j;
@@ -38005,7 +37926,7 @@ ref = l;
 },
 {
 pos = (-15,0);
-ref = commaaccentcomb;
+ref = commaaccentcomb.ss01;
 }
 );
 width = 196;
@@ -38052,6 +37973,7 @@ width = 270;
 );
 },
 {
+export = 0;
 glyphname = odieresis.ss01;
 kernLeft = KO_odieresis;
 kernRight = KO_o;
@@ -38065,7 +37987,7 @@ ref = o;
 },
 {
 pos = (11,0);
-ref = dieresiscomb;
+ref = dieresiscomb.ss01;
 }
 );
 width = 432;
@@ -38112,6 +38034,7 @@ width = 604;
 );
 },
 {
+export = 0;
 glyphname = scommaaccent.ss01;
 kernLeft = KO_s;
 kernRight = KO_s;
@@ -38125,7 +38048,7 @@ ref = s;
 },
 {
 pos = (58,0);
-ref = commaaccentcomb;
+ref = commaaccentcomb.ss01;
 }
 );
 width = 326;
@@ -38172,6 +38095,7 @@ width = 504;
 );
 },
 {
+export = 0;
 glyphname = udieresis.ss01;
 kernLeft = KO_u;
 kernRight = KO_u;
@@ -38185,7 +38109,7 @@ ref = u;
 },
 {
 pos = (12,0);
-ref = dieresiscomb;
+ref = dieresiscomb.ss01;
 }
 );
 width = 434;
@@ -38233,6 +38157,7 @@ width = 611;
 },
 {
 color = 2;
+export = 0;
 glyphname = ydieresis.ss01;
 kernLeft = KO_y.ss03;
 kernRight = KO_y;
@@ -38246,7 +38171,7 @@ ref = y;
 },
 {
 pos = (-5,0);
-ref = dieresiscomb;
+ref = dieresiscomb.ss01;
 }
 );
 width = 388;
@@ -39353,6 +39278,7 @@ width = 628;
 );
 },
 {
+export = 0;
 glyphname = yacute.ss03;
 kernLeft = KO_v;
 kernRight = KO_y;
@@ -39414,6 +39340,7 @@ width = 543;
 },
 {
 color = 0;
+export = 0;
 glyphname = ydieresis.ss03;
 kernLeft = KO_v;
 kernRight = KO_y;
@@ -39872,6 +39799,7 @@ width = 569;
 );
 },
 {
+export = 0;
 glyphname = ydieresis.ss01.ss03;
 kernLeft = KO_v;
 kernRight = KO_y;
@@ -39881,11 +39809,11 @@ layers = (
 layerId = m01;
 shapes = (
 {
-ref = y;
+ref = y.ss03;
 },
 {
 pos = (-5,0);
-ref = dieresiscomb;
+ref = dieresiscomb.ss01;
 }
 );
 width = 388;
@@ -44124,6 +44052,7 @@ metricLeft = w;
 metricRight = w;
 },
 {
+export = 0;
 glyphname = f_i.ss01;
 kernLeft = KO_f;
 kernRight = KO_f_i.ss01;
@@ -53534,7 +53463,7 @@ width = 213;
 background = {
 shapes = (
 {
-ref = period.ss01;
+ref = period;
 }
 );
 };
@@ -53572,7 +53501,7 @@ width = 255;
 background = {
 shapes = (
 {
-ref = period.ss01;
+ref = period;
 }
 );
 };
@@ -53610,7 +53539,7 @@ width = 242;
 background = {
 shapes = (
 {
-ref = period.ss01;
+ref = period;
 }
 );
 };
@@ -53760,7 +53689,7 @@ width = 257;
 background = {
 shapes = (
 {
-ref = colon.ss01;
+ref = colon;
 }
 );
 };
@@ -53780,7 +53709,7 @@ width = 244;
 background = {
 shapes = (
 {
-ref = colon.ss01;
+ref = colon;
 }
 );
 };
@@ -55832,11 +55761,11 @@ layerId = m01;
 shapes = (
 {
 pos = (0,138);
-ref = period.ss01;
+ref = period;
 },
 {
 pos = (0,518);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 213;
@@ -55846,11 +55775,11 @@ layerId = m002;
 shapes = (
 {
 pos = (0,131);
-ref = period.ss01;
+ref = period;
 },
 {
 pos = (0,511);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 255;
@@ -55860,11 +55789,11 @@ layerId = m003;
 shapes = (
 {
 pos = (0,130);
-ref = period.ss01;
+ref = period;
 },
 {
 pos = (0,466);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 242;
@@ -55874,11 +55803,11 @@ layerId = m004;
 shapes = (
 {
 pos = (0,130);
-ref = period.ss01;
+ref = period;
 },
 {
 pos = (0,455);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 285;
@@ -55907,11 +55836,11 @@ layerId = m01;
 shapes = (
 {
 pos = (0,138);
-ref = comma.ss01;
+ref = comma;
 },
 {
 pos = (0,518);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 213;
@@ -55921,11 +55850,11 @@ layerId = m002;
 shapes = (
 {
 pos = (0,131);
-ref = comma.ss01;
+ref = comma;
 },
 {
 pos = (0,511);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 255;
@@ -55935,7 +55864,7 @@ background = {
 shapes = (
 {
 pos = (-1,0);
-ref = colon.ss01;
+ref = colon;
 }
 );
 };
@@ -55943,11 +55872,11 @@ layerId = m003;
 shapes = (
 {
 pos = (0,130);
-ref = comma.ss01;
+ref = comma;
 },
 {
 pos = (0,466);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 242;
@@ -55957,7 +55886,7 @@ background = {
 shapes = (
 {
 pos = (-1,0);
-ref = colon.ss01;
+ref = colon;
 }
 );
 };
@@ -55965,11 +55894,11 @@ layerId = m004;
 shapes = (
 {
 pos = (0,130);
-ref = comma.ss01;
+ref = comma;
 },
 {
 pos = (0,455);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 285;
@@ -56008,7 +55937,7 @@ nodes = (
 },
 {
 pos = (10,0);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 233;
@@ -56027,7 +55956,7 @@ nodes = (
 },
 {
 pos = (10,0);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 275;
@@ -56056,7 +55985,7 @@ nodes = (
 },
 {
 pos = (10,0);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 262;
@@ -56085,7 +56014,7 @@ nodes = (
 },
 {
 pos = (10,0);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 305;
@@ -56111,7 +56040,7 @@ nodes = (
 {
 angle = 180;
 pos = (222,721);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 231;
@@ -56131,7 +56060,7 @@ nodes = (
 {
 angle = 180;
 pos = (264,720);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 273;
@@ -56151,7 +56080,7 @@ nodes = (
 {
 angle = 180;
 pos = (250,720);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 258;
@@ -56171,7 +56100,7 @@ nodes = (
 {
 angle = 180;
 pos = (296,720);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 306;
@@ -56261,7 +56190,7 @@ nodes = (
 },
 {
 pos = (94,0);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 394;
@@ -56336,7 +56265,7 @@ nodes = (
 },
 {
 pos = (163,0);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 567;
@@ -56405,7 +56334,7 @@ nodes = (
 },
 {
 pos = (82,0);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 420;
@@ -56474,7 +56403,7 @@ nodes = (
 },
 {
 pos = (162,0);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 587;
@@ -56548,7 +56477,7 @@ nodes = (
 {
 angle = 180;
 pos = (300,721);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 394;
@@ -56616,7 +56545,7 @@ nodes = (
 {
 angle = 180;
 pos = (404,720);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 567;
@@ -56684,7 +56613,7 @@ nodes = (
 {
 angle = 180;
 pos = (338,720);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 420;
@@ -56749,7 +56678,7 @@ nodes = (
 {
 angle = 180;
 pos = (425,720);
-ref = period.ss01;
+ref = period;
 }
 );
 width = 587;
@@ -56864,6 +56793,7 @@ width = 185;
 );
 },
 {
+export = 0;
 glyphname = comma.ss01;
 kernLeft = KO_period.ss01;
 kernRight = KO_period.ss01;
@@ -57086,6 +57016,7 @@ width = 285;
 );
 },
 {
+export = 0;
 glyphname = semicolon.ss01;
 kernLeft = KO_colon.ss01;
 lastChange = "2026-10-21 11:51:30 +0000";
@@ -57094,11 +57025,11 @@ layers = (
 layerId = m01;
 shapes = (
 {
-ref = comma;
+ref = comma.ss01;
 },
 {
 pos = (0,380);
-ref = period;
+ref = period.ss01;
 }
 );
 width = 213;
@@ -57163,6 +57094,7 @@ metricLeft = colon;
 metricRight = colon;
 },
 {
+export = 0;
 glyphname = exclam.ss01;
 kernLeft = KO_exclam.ss01;
 kernRight = KO_exclam;
@@ -57192,7 +57124,7 @@ nodes = (
 },
 {
 pos = (9,0);
-ref = period;
+ref = period.ss01;
 }
 );
 width = 231;
@@ -57277,6 +57209,7 @@ width = 306;
 );
 },
 {
+export = 0;
 glyphname = question.ss01;
 kernLeft = KO_question.ss01;
 kernRight = KO_question;
@@ -57353,7 +57286,7 @@ nodes = (
 },
 {
 pos = (94,0);
-ref = period;
+ref = period.ss01;
 }
 );
 width = 394;
@@ -57574,6 +57507,7 @@ width = 587;
 );
 },
 {
+export = 0;
 glyphname = periodcentered.ss01;
 lastChange = "2026-10-21 11:51:30 +0000";
 layers = (
@@ -57582,7 +57516,7 @@ layerId = m01;
 shapes = (
 {
 pos = (-61,327);
-ref = period;
+ref = period.ss01;
 }
 );
 width = 91;
@@ -57667,6 +57601,7 @@ width = 185;
 );
 },
 {
+export = 0;
 glyphname = periodcentered.loclCAT.case.ss01;
 lastChange = "2026-10-21 11:51:30 +0000";
 layers = (
@@ -57675,7 +57610,7 @@ layerId = m01;
 shapes = (
 {
 pos = (0,30);
-ref = periodcentered;
+ref = periodcentered.ss01;
 }
 );
 width = 91;
@@ -61676,7 +61611,7 @@ background = {
 shapes = (
 {
 pos = (-10,0);
-ref = quoteright.ss01;
+ref = quoteright;
 }
 );
 };
@@ -61710,7 +61645,7 @@ background = {
 shapes = (
 {
 pos = (-12,0);
-ref = quoteright.ss01;
+ref = quoteright;
 }
 );
 };
@@ -61744,7 +61679,7 @@ background = {
 shapes = (
 {
 pos = (-13,0);
-ref = quoteright.ss01;
+ref = quoteright;
 }
 );
 };
@@ -61778,7 +61713,7 @@ background = {
 shapes = (
 {
 pos = (-4,0);
-ref = quoteright.ss01;
+ref = quoteright;
 }
 );
 };
@@ -61818,6 +61753,7 @@ R = quotes;
 };
 },
 {
+export = 0;
 glyphname = quotedblbase.ss01;
 kernRight = KO_quotedblbase.ss01;
 lastChange = "2026-10-21 11:51:30 +0000";
@@ -61839,11 +61775,11 @@ layerId = m01;
 shapes = (
 {
 pos = (143,0);
-ref = comma;
+ref = comma.ss01;
 },
 {
 pos = (-7,0);
-ref = comma;
+ref = comma.ss01;
 }
 );
 width = 357;
@@ -61936,6 +61872,7 @@ metricLeft = quoteright;
 metricRight = quoteright;
 },
 {
+export = 0;
 glyphname = quotedblright.ss01;
 kernLeft = KO_quotedblright.ss01;
 kernRight = KO_quotedblright.ss01;
@@ -61957,10 +61894,10 @@ layerId = m01;
 shapes = (
 {
 pos = (150,0);
-ref = quoteright;
+ref = quoteright.ss01;
 },
 {
-ref = quoteright;
+ref = quoteright.ss01;
 }
 );
 width = 363;
@@ -62042,6 +61979,7 @@ metricLeft = quoteright;
 metricRight = quoteright;
 },
 {
+export = 0;
 glyphname = quoteright.ss01;
 kernLeft = KO_quotedblright;
 kernRight = KO_quoteright.ss01;
@@ -68639,6 +68577,7 @@ R = symbols;
 };
 },
 {
+export = 0;
 glyphname = dollar.ss12;
 kernRight = KO_dollar;
 lastChange = "2026-10-21 11:51:29 +0000";
@@ -79099,6 +79038,7 @@ R = NoKerning;
 };
 },
 {
+export = 0;
 glyphname = dotaccentcomb.ss01;
 lastChange = "2026-10-21 11:51:30 +0000";
 layers = (
@@ -79226,6 +79166,7 @@ width = 280;
 );
 },
 {
+export = 0;
 glyphname = commaaccentcomb.ss01;
 lastChange = "2026-10-21 11:51:30 +0000";
 layers = (
@@ -80525,6 +80466,7 @@ width = 269;
 unicode = 731;
 },
 {
+export = 0;
 glyphname = dotaccent.ss01;
 lastChange = "2026-10-21 11:51:30 +0000";
 layers = (
@@ -80532,7 +80474,7 @@ layers = (
 layerId = m01;
 shapes = (
 {
-ref = dotaccentcomb;
+ref = dotaccentcomb.ss01;
 }
 );
 width = 204;
@@ -80613,8 +80555,8 @@ width = 510;
 instances = (
 {
 axesValues = (
-0,
-0
+93.75,
+500
 );
 customParameters = (
 {
@@ -80637,11 +80579,12 @@ m003 = -1.33333;
 m01 = 5.33333;
 };
 name = Regular;
+weightClass = 400;
 },
 {
 axesValues = (
-0,
-0
+93.75,
+700
 );
 customParameters = (
 {
@@ -111799,7 +111742,7 @@ key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright 2022 The Instrument Sans Project Authors (https://github.com/Instrument/instrument-sans).";
+value = "Copyright 2022 The Instrument Sans Project Authors (https://github.com/Instrument/instrument-sans)";
 }
 );
 },
@@ -111843,13 +111786,13 @@ key = manufacturers;
 values = (
 {
 language = dflt;
-value = fragTYPE;
+value = "Van Lennep Amsterdam";
 }
 );
 },
 {
 key = manufacturerURL;
-value = www.fragtypefoundry.xyz;
+value = www.vanlennep.eu;
 }
 );
 stems = (
