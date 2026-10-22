@@ -44,7 +44,7 @@ Still available as optional features:
 
 ## Files
 
-- `delivery/` The release package: OTF fonts, WOFF2 webfonts, specimen, LEESMIJ (Dutch install and usage guide), FONTLOG and OFL.
+- `delivery/` The release package: OTF fonts, WOFF2 webfonts, specimen, README (install and usage guide), FONTLOG and OFL.
 - `sources/SQBAInstrumentSans.glyphs` and `sources/SQBAInstrumentSans-Italic.glyphs` The modified Glyphs sources.
 - `sources/InstrumentSans.glyphs` and `sources/InstrumentSans-Italic.glyphs` The original Instrument Sans sources, kept for reference.
 
